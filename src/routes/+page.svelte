@@ -1,13 +1,11 @@
 <script>
 	// @ts-nocheck
 
-	// seconds
 	let seconds = 1500;
 	let timer = null;
 	let audio;
 	const audioSrc = './tone.wav'
 	const bgSrc = './bg.jpg'
-
 
 	function plusnul(value) {
 		return value < 10 ? '0' + value : value;
