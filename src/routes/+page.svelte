@@ -5,6 +5,7 @@
 	let seconds = 1500;
 	let timer = null;
 	let audio;
+	const audioSrc = './tone.wav'
 	const bgSrc = './bg.jpg'
 
 
@@ -53,7 +54,7 @@
 			<button on:click={stop}>Stop</button>
 			<button on:click={reset}>Reset</button>
 		</div>
-		<audio src="./tone.wav" bind:this={audio} />
+		<audio src="{audioSrc}" bind:this={audio} />
 	</div>
 </div>
 
