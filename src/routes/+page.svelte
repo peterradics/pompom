@@ -5,6 +5,8 @@
 	let seconds = 1500;
 	let timer = null;
 	let audio;
+	const bgSrc = './bg.jpg'
+
 
 	function plusnul(value) {
 		return value < 10 ? '0' + value : value;
@@ -41,7 +43,7 @@
 	}
 </script>
 
-<div class="container">
+<div class="container" style="background: url({bgSrc}) no-repeat top left;background-size: cover;">
 	<div class="theclock">
 		<div class="clock">
 			{secondsToClockStyle(seconds)}
@@ -71,8 +73,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: url('./bg.jpg') no-repeat top left;
-		background-size: cover;
 	}
 
 	.clock {
